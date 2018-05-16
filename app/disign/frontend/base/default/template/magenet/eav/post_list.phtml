@@ -1,0 +1,12 @@
+<?php /** @var MageNet_Eav_Block_Post $this */ ?>
+<?php $collection = $this->getPostCollection(); ?>
+<?php if ($collection->count() > 0): ?>
+    <?php foreach ($collection as $post): ?>
+    <div class="post-collection">
+        <h3><?= $post->getTitle(); ?></h3>
+        <p><?= $post->getAuthor(); ?></p>
+    </div>
+    <?php endforeach; ?>
+<?php else: ?>
+    <div class="no-items"><?= $this->helper('magenrt_eav')->__('No posts'); ?></div>
+<?php endif; ?>

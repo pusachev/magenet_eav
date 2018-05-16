@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <magenet_eav_index_index>
+        <reference name="content">
+            <block type="magenet_eav/post" name="post.list" template="magenet/eav/post_list.phtml" />
+        </reference>
+    </magenet_eav_index_index>
+</layout>
